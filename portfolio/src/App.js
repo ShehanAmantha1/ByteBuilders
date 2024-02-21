@@ -1,13 +1,27 @@
 import './App.css';
+
+
+
+
+
+
+
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import NavBar from './Nav';
 import HomePage from 'C:/Users/janit/source/repos/ByteBuilders/ByteBuilders/portfolio/src/Components/Home.js';
 
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <HomePage></HomePage>
-    </div>
+    <Router>
+      <NavBar />
+      <Routes>
+       
+        <Route path="/" element={<HomePage />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
