@@ -4,10 +4,10 @@ import React from 'react';
 function HomePage() {
   const navStyle = {
     backgroundColor: 'black',
-    padding: '10px',
+    padding: '30px',
     color: 'white',
     display: 'flex',
-    justifyContent: 'flex-start', // Align links to the left
+    justifyContent: 'space-between',
     alignItems: 'center',
   };
 
@@ -16,63 +16,21 @@ function HomePage() {
     color: 'white',
     marginRight: '10px',
     cursor: 'pointer',
+    margin:'20px'
   };
 
   const hoverStyle = {
-    color: 'lightblue', // Change text color on hover
-  };
-
-  const handleMouseOver = (e) => {
-    e.target.style = hoverStyle;
-  };
-
-  const handleMouseOut = (e) => {
-    e.target.style = linkStyle;
-  };
-
-  const handleFocus = (e) => {
-    e.target.style = hoverStyle;
-  };
-
-  const handleBlur = (e) => {
-    e.target.style = linkStyle;
+    textDecoration: 'non',
   };
 
   return (
     <div>
       <nav style={navStyle}>
+        {/* Removed the h1 for the app name */}
         <div>
-          <a
-            href="/"
-            style={linkStyle}
-            onMouseOver={handleMouseOver}
-            onMouseOut={handleMouseOut}
-            onFocus={handleFocus}
-            onBlur={handleBlur}
-          >
-            Home
-          </a>
-          <a
-            href="/about"
-            style={linkStyle}
-            onMouseOver={handleMouseOver}
-            onMouseOut={handleMouseOut}
-            onFocus={handleFocus}
-            onBlur={handleBlur}
-          >
-            About
-          </a>
-          
-          <a
-            href="/contact"
-            style={linkStyle}
-            onMouseOver={handleMouseOver}
-            onMouseOut={handleMouseOut}
-            onFocus={handleFocus}
-            onBlur={handleBlur}
-          >
-            Contact
-          </a>
+          <a href="/" style={linkStyle} onMouseOver={(e) => e.target.style = hoverStyle} onMouseOut={(e) => e.target.style = linkStyle}>Home</a>
+          <a href="/about" style={linkStyle} onMouseOver={(e) => e.target.style = hoverStyle} onMouseOut={(e) => e.target.style = linkStyle}>About</a>
+          <a href="/contact" style={linkStyle} onMouseOver={(e) => e.target.style = hoverStyle} onMouseOut={(e) => e.target.style = linkStyle}>Contact</a>
         </div>
       </nav>
 
