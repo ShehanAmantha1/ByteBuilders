@@ -1,0 +1,37 @@
+/* StyleSheet.css */
+.homepage-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .text-container {
+    width: 50%;
+    margin-top: 100px;
+
+  }
+  
+  .image-container {
+    text-align: right;
+    margin-left: 20px;
+  }
+  .social-media-icons,
+  .text-container h1{
+    margin-left: 90px; /* Adjust the margin as needed */
+
+  }
+  .text-container h2 {
+    margin-left: 90px; /* Adjust the margin as needed */
+    color: #888; /* Use the desired light gray color code or name */
+  }
+  .social-icons {
+    font-size: 24px; /* Adjust the font size as needed */
+  }
+  
+  .social-icons i {
+    margin-right: 10px; /* Adjust the margin between icons as needed */
+  }
+
+  .social-media-icons a:hover img {
+    opacity: 0.8; /* Example hover effect: reduce opacity */
+  }
+  
