@@ -13,6 +13,7 @@
   .image-container {
     text-align: right;
     margin-left: 20px;
+    max-width: 100%; /* Make the image responsive */
   }
   .social-media-icons,
   .text-container h1{
