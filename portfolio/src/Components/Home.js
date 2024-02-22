@@ -1,6 +1,6 @@
 // HomePage.js
 import React from 'react';
-import "C:/Users/janit/source/repos/ByteBuilders/ByteBuilders/portfolio/src/StyleSheet.css"
+import "./StyleSheet.css";
 function HomePage() {
   return (
     <div className="homepage-container">
