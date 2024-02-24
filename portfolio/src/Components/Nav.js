@@ -9,7 +9,7 @@ const NavBar = () => {
         marginBottom: '20px',
         display: 'flex',
         justifyContent: 'flex-end', // Align items to the right
-        width: '100%', // Make the navigation bar fit the page
+        width: '96%', // Make the navigation bar fit the page
       };
 
   const linkStyle = {
@@ -22,7 +22,7 @@ const NavBar = () => {
     <nav style={navStyle}>
       <ul style={{ listStyle: 'none', margin: 0, padding: 0 }}>
         <li style={{ display: 'inline' }}>
-          <Link to="./Components/Home.js" style={linkStyle}>Home</Link>
+          <Link to="/home" style={linkStyle}>Home</Link>
         </li>
         <li style={{ display: 'inline' }}>
           <Link to="/about" style={linkStyle}>About</Link>
