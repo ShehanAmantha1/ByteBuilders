@@ -1,28 +1,78 @@
 // ImageGallery.js
-import React from 'react';
+import React, { useState } from 'react';
 import './ImageGallery.css';
+import ImageModal from './ImageModal';
 
 const ImageGallery = () => {
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const openModal = (imageUrl) => {
+    setSelectedImage(imageUrl);
+  };
+
+  const closeModal = () => {
+    setSelectedImage(null);
+  };
+
   return (
     <div className="image-gallery">
-      <div className="image-gallery-item">
+      <div className="image-gallery-item" onClick={() => openModal("WhatsApp Image 2024-02-24 at 11.39.45_0bccd467.jpg")}>
         <img src="WhatsApp Image 2024-02-24 at 11.39.45_0bccd467.jpg" alt="Placeholder Image 1" />
       </div>
-      <div className="image-gallery-item">
-        <img src="WhatsApp Image 2024-02-24 at 11.39.45_0bccd467.jpg" alt="Placeholder Image 2" />
+
+      <div className="image-gallery-item" onClick={() => openModal("stefan-kunze--6-uqd2hMCg-unsplash.jpg")}>
+        <img src="stefan-kunze--6-uqd2hMCg-unsplash.jpg" alt="Placeholder Image 2" />
       </div>
-      <div className="image-gallery-item">
-        <img src="WhatsApp Image 2024-02-24 at 11.39.45_0bccd467.jpg" alt="Placeholder Image 3" />
+
+      <div className="image-gallery-item" onClick={() => openModal("WhatsApp Image 2024-02-24 at 11.39.45_0bccd467.jpg")}>
+        <img src="WhatsApp Image 2024-02-24 at 11.41.05_24a44ceb.jpg" alt="Placeholder Image 3" />
       </div>
-      <div className="image-gallery-item">
-        <img src="WhatsApp Image 2024-02-24 at 11.39.45_0bccd467.jpg" alt="Placeholder Image 4" />
+
+      <div className="image-gallery-item" onClick={() => openModal("WhatsApp Image 2024-02-24 at 11.39.45_0bccd467.jpg")}>
+        <img src="WhatsApp Image 2024-02-24 at 11.39.45_0bccd467.jpg" alt="Placeholder Image 1" />
       </div>
-      <div className="image-gallery-item">
-        <img src="WhatsApp Image 2024-02-24 at 11.39.45_0bccd467.jpg" alt="Placeholder Image 5" />
+
+      <div className="image-gallery-item" onClick={() => openModal("WhatsApp Image 2024-02-24 at 11.39.45_0bccd467.jpg")}>
+        <img src="WhatsApp Image 2024-02-24 at 11.39.45_0bccd467.jpg" alt="Placeholder Image 1" />
       </div>
-      <div className="image-gallery-item">
-        <img src="WhatsApp Image 2024-02-24 at 11.39.45_0bccd467.jpg" alt="Placeholder Image 6" />
+
+      <div className="image-gallery-item" onClick={() => openModal("WhatsApp Image 2024-02-24 at 11.39.45_0bccd467.jpg")}>
+        <img src="WhatsApp Image 2024-02-24 at 11.39.45_0bccd467.jpg" alt="Placeholder Image 1" />
       </div>
+
+      <div className="image-gallery-item" onClick={() => openModal("WhatsApp Image 2024-02-24 at 11.39.45_0bccd467.jpg")}>
+        <img src="WhatsApp Image 2024-02-24 at 11.39.45_0bccd467.jpg" alt="Placeholder Image 1" />
+      </div>
+
+      <div className="image-gallery-item" onClick={() => openModal("WhatsApp Image 2024-02-24 at 11.39.45_0bccd467.jpg")}>
+        <img src="WhatsApp Image 2024-02-24 at 11.39.45_0bccd467.jpg" alt="Placeholder Image 1" />
+      </div>
+
+      <div className="image-gallery-item" onClick={() => openModal("WhatsApp Image 2024-02-24 at 11.39.45_0bccd467.jpg")}>
+        <img src="WhatsApp Image 2024-02-24 at 11.39.45_0bccd467.jpg" alt="Placeholder Image 1" />
+      </div>
+
+      <div className="image-gallery-item" onClick={() => openModal("WhatsApp Image 2024-02-24 at 11.39.45_0bccd467.jpg")}>
+        <img src="WhatsApp Image 2024-02-24 at 11.39.45_0bccd467.jpg" alt="Placeholder Image 1" />
+      </div>
+
+      <div className="image-gallery-item" onClick={() => openModal("WhatsApp Image 2024-02-24 at 11.39.45_0bccd467.jpg")}>
+        <img src="WhatsApp Image 2024-02-24 at 11.39.45_0bccd467.jpg" alt="Placeholder Image 1" />
+      </div>
+
+      <div className="image-gallery-item" onClick={() => openModal("WhatsApp Image 2024-02-24 at 11.39.45_0bccd467.jpg")}>
+        <img src="WhatsApp Image 2024-02-24 at 11.39.45_0bccd467.jpg" alt="Placeholder Image 1" />
+      </div>
+
+      <div className="image-gallery-item" onClick={() => openModal("WhatsApp Image 2024-02-24 at 11.39.45_0bccd467.jpg")}>
+        <img src="WhatsApp Image 2024-02-24 at 11.39.45_0bccd467.jpg" alt="Placeholder Image 1" />
+      </div>
+
+      <div className="image-gallery-item" onClick={() => openModal("WhatsApp Image 2024-02-24 at 11.39.45_0bccd467.jpg")}>
+        <img src="WhatsApp Image 2024-02-24 at 11.39.45_0bccd467.jpg" alt="Placeholder Image 1" />
+      </div>
+      {/* Add more image-gallery-items here */}
+      {selectedImage && <ImageModal imageUrl={selectedImage} onClose={closeModal} />}
     </div>
   );
 };

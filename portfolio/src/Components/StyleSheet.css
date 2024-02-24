@@ -16,14 +16,21 @@
     max-width: 100%; /* Make the image responsive */
     margin-top: 10px;
   }
-  .social-media-icons,
-  .text-container h1{
-    margin-left: 90px; /* Adjust the margin as needed */
+  .social-media-icons{
+    margin-left: 50px; /* Adjust the margin as needed */
 
   }
+
+  .text-container h1{
+    margin-left: 90px; /* Adjust the margin as needed */
+    font-family: 'Playfair Display', serif;
+
+  }
+  
   .text-container h2 {
     margin-left: 90px; /* Adjust the margin as needed */
     color: #888; /* Use the desired light gray color code or name */
+    font-family: 'Playfair Display', serif;
   }
   .social-icons {
     font-size: 24px; /* Adjust the font size as needed */

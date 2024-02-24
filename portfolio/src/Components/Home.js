@@ -5,6 +5,7 @@ import About from './About.js';
 
 function HomePage() {
   return (
+    
     <div>
       <div className="homepage-container">
         <div className="text-container">
@@ -39,17 +40,19 @@ function HomePage() {
               </a>
 
             </div>
-            <div>
-            <div>
+            <div >
             <img src="/Screenshot 2024-02-24 181451.png" alt="Tiktok icon" />
 
             </div>
-
+            <div>
+            
             </div>
 
             </div>
 
           </div>
+          
+
         </div>
 
         <div className="image-container">
@@ -60,12 +63,13 @@ function HomePage() {
 
       {/* Add the About component below the homepage content */}
       <br />
-      <br />
       <div>
         <About />
       </div>
     </div>
+    
   );
+  
 }
 
 export default HomePage;

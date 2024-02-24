@@ -15,7 +15,7 @@ const NavBar = () => {
   const linkStyle = {
     color: '#fff',
     textDecoration: 'none',
-    margin: '0 10px',
+    margin: '0 50px',
   };
 
   return (
@@ -25,7 +25,10 @@ const NavBar = () => {
           <Link to="/home" style={linkStyle}>Home</Link>
         </li>
         <li style={{ display: 'inline' }}>
-          <Link to="/imageGallery" style={linkStyle}>About</Link>
+          <Link to="/about" style={linkStyle}>About</Link>
+        </li>
+        <li style={{ display: 'inline' }}>
+          <Link to="/imageGallery" style={linkStyle}>My Works</Link>
         </li>
         <li style={{ display: 'inline' }}>
           <Link to="/contact" style={linkStyle}>Contact</Link>

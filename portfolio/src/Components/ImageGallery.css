@@ -1,18 +1,25 @@
 /* ImageGallery.css */
 .image-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: repeat(4, 1fr); /* Create a grid with 4 columns */
     gap: 20px;
   }
   
   .image-gallery-item {
-    padding: 10px;
-    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 2px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow to the gallery items */
+    transition: transform 0.3s ease-in-out; /* Add a transition effect */
     border-radius: 5px;
   }
   
   .image-gallery-item img {
-    width: 100%;
-    height: auto;
+    width: 100%; /* Make the image fit the width of the gallery item */
+    height: auto; /* Automatically adjust the height based on the width */
+    border-radius: 5px; /* Add a border radius to the images */
+  }
+  
+  .image-gallery-item:hover {
+    transform: scale(1.05); /* Add a hover effect to the gallery items */
   }
   
