@@ -11,6 +11,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NavBar from './Components/Nav';
 import HomePage from './Components/Home.js';
 import About from './Components/About.js';
+import ContactPage from './Components/Contact.js';
 
 
 
@@ -22,6 +23,7 @@ const App = () => {
        
         <Route path="/home" element={<HomePage />} />
         <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<ContactPage />} />
 
       </Routes>
     </Router>

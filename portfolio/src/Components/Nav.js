@@ -6,7 +6,7 @@ const NavBar = () => {
     const navStyle = {
         background: '#333',
         padding: '30px',
-        marginBottom: '20px',
+        //marginBottom: '20px',
         display: 'flex',
         justifyContent: 'flex-end', // Align items to the right
         width: '96%', // Make the navigation bar fit the page
