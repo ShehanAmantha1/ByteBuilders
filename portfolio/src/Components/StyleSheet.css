@@ -36,16 +36,7 @@
   .social-media-icons a:hover img {
     opacity: 0.8; /* Example hover effect: reduce opacity */
   }
-  .social-media-icon:hover::after {
-    content: attr(data-name); /* Display the name when hovering */
-    position: absolute;
-    bottom: -20px;
-    left: 50%;
-    transform: translateX(-50%);
-    opacity: 0;
-    white-space: nowrap; /* Prevent text from wrapping */
-    transition: opacity 0.3s ease-in-out;
-  }
+  
   
   .social-media-icon:hover img {
     transform: scale(1.2);
@@ -154,4 +145,20 @@
 
 .social-media-icon:hover img {
   transform: scale(1.2);
+}
+
+.social-media-icon::before {
+  content: attr(data-name);
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+  padding-left: 10px; /* Adjust padding as needed */
+  white-space: nowrap; /* Prevent text from wrapping */
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.social-media-icon:hover::before {
+  opacity: 1;
 }

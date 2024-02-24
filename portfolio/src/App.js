@@ -12,7 +12,7 @@ import NavBar from './Components/Nav';
 import HomePage from './Components/Home.js';
 import About from './Components/About.js';
 import ContactPage from './Components/Contact.js';
-
+import ImageGallery from './Components/ImageGallery.js';
 
 
 const App = () => {
@@ -23,6 +23,7 @@ const App = () => {
        
         <Route path="/home" element={<HomePage />} />
         <Route path="/about" element={<About />} />
+        <Route path="/imageGallery" element={<ImageGallery />} />
         <Route path="/contact" element={<ContactPage />} />
 
       </Routes>

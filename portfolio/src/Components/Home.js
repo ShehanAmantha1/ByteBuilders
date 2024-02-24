@@ -8,12 +8,12 @@ function HomePage() {
     <div>
       <div className="homepage-container">
         <div className="text-container">
-          <h2>Hello I'm Thanushka Navod</h2>
+          <h2>Hello I'm Thulshika Nawod</h2>
           <h1>Photographer</h1>
           <h2>Currently working for Kapture Studio</h2>
           <div className="social-media-icons">
             <div>
-            <div className="social-media-icon" data-name="Facebook">
+            <div className="social-media-icon" data-name="Thulshika Nawod">
               <a href="https://www.facebook.com/Thulshika?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">
               <span>Facebook</span>
 
@@ -22,7 +22,7 @@ function HomePage() {
             </div>
             </div>
 <div>
-            <div className="social-media-icon" data-name="Instagram">
+            <div className="social-media-icon" data-name="thul_99_">
               <a href="https://www.instagram.com/thul_99_?igsh=dzR0Nm9mcTZyOWZm" target="_blank" rel="noopener noreferrer">
               <span>Instagram</span>
 
@@ -31,7 +31,7 @@ function HomePage() {
             </div>
             </div>
 <div>
-            <div className="social-media-icon" data-name="Tiktok">
+            <div className="social-media-icon" data-name="photo_gallery__thulshika">
               <a href="https://www.tiktok.com/@photo_gallery__thulshika?_t=8k6MKbfwMlx&_r=1" target="_blank" rel="noopener noreferrer">
               <span>Tiktok</span>
 

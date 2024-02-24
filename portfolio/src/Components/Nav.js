@@ -25,7 +25,7 @@ const NavBar = () => {
           <Link to="/home" style={linkStyle}>Home</Link>
         </li>
         <li style={{ display: 'inline' }}>
-          <Link to="/about" style={linkStyle}>About</Link>
+          <Link to="/imageGallery" style={linkStyle}>About</Link>
         </li>
         <li style={{ display: 'inline' }}>
           <Link to="/contact" style={linkStyle}>Contact</Link>
