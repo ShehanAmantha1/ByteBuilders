@@ -36,4 +36,122 @@
   .social-media-icons a:hover img {
     opacity: 0.8; /* Example hover effect: reduce opacity */
   }
+  .social-media-icon:hover::after {
+    content: attr(data-name); /* Display the name when hovering */
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    white-space: nowrap; /* Prevent text from wrapping */
+    transition: opacity 0.3s ease-in-out;
+  }
   
+  .social-media-icon:hover img {
+    transform: scale(1.2);
+  }
+  
+  .social-media-icon:hover::after {
+    opacity: 1;
+  }
+  
+  .social-media-icon img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .social-media-icon:hover img {
+    transform: scale(1.2);
+  }
+  
+  .social-media-icon:hover::after {
+    opacity: 1;
+  }
+  .social-media-icon {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .social-media-icon img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .social-media-icon span {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .social-media-icon:hover img {
+    transform: scale(1.2);
+  }
+  
+  .social-media-icon:hover span {
+    opacity: 1;
+  }
+
+
+
+  /* StyleSheet.css */
+.social-media-icon {
+  display: inline-block;
+  text-align: center;
+  margin: 10px; /* Adjust margin as needed */
+}
+
+.social-media-icon img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 5px; /* Adjust margin as needed */
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-media-icon span {
+  display: block;
+  color: #fff;
+}
+
+.social-media-icon:hover img {
+  transform: scale(1.2);
+}
+
+
+.social-media-icon {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
+}
+
+.social-media-icon img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.arrow-down {
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 8px solid #191818; /* Arrow color */
+}
+
+.social-media-icon span {
+  display: block;
+  color: #fff;
+}
+
+.social-media-icon:hover img {
+  transform: scale(1.2);
+}

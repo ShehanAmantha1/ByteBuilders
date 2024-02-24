@@ -7,6 +7,7 @@ const About = () => {
         justifyContent: 'center',
         alignItems: 'center',
         height: '100vh', // Full viewport height
+        background: '#000',
     };
 
     const rectangleStyle = {
