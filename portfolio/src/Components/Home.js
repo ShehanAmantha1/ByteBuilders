@@ -2,6 +2,7 @@
 import React from 'react';
 import "./StyleSheet.css";
 import About from './About.js';
+import Footer from './Footer.js';
 
 function HomePage() {
   return (
@@ -65,8 +66,14 @@ function HomePage() {
       <br />
       <div>
         <About />
+        <Footer/>
+
+      </div>
+      <div>
+
       </div>
     </div>
+    
     
   );
   
