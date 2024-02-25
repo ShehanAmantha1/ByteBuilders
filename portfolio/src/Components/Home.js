@@ -2,7 +2,25 @@
 import React from 'react';
 import "./StyleSheet.css";
 import About from './About.js';
-import Footer from './Footer.js';
+
+const nameStyle = {
+  fontFamily: 'Arial, sans-serif', // Change the font family as needed
+  fontSize: '24px', // Change the font size as needed
+  fontWeight: 'bold', // Add other font styles as needed
+};
+
+const titleStyle = {
+  fontFamily: 'Georgia, serif', // Change the font family as needed
+  fontSize: '46px', // Change the font size as needed
+  fontStyle: 'italic', // Add other font styles as needed
+};
+
+const currentWorkStyle = {
+  fontFamily: 'Verdana, sans-serif', // Change the font family as needed
+  fontSize: '18px', // Change the font size as needed
+  color: '#555', // Change the text color as needed
+  // Add other font styles as needed
+};
 
 function HomePage() {
   return (
@@ -10,9 +28,9 @@ function HomePage() {
     <div>
       <div className="homepage-container">
         <div className="text-container">
-          <h2>Hello I'm Thulshika Nawod</h2>
-          <h1>Photographer</h1>
-          <h2>Currently working for Kapture Studio</h2>
+        <h2 style={nameStyle}>Hello I'm Thulshika Nawod</h2>
+      <h1 style={titleStyle}>Photographer</h1>
+      <h2 style={currentWorkStyle}>Currently working for Kapture Studio</h2>
           <div className="social-media-icons">
             <div>
             <div className="social-media-icon" data-name="Thulshika Nawod">
@@ -66,7 +84,6 @@ function HomePage() {
       <br />
       <div>
         <About />
-        <Footer/>
 
       </div>
       <div>

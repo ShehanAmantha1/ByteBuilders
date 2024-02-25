@@ -7,13 +7,18 @@ const About = () => {
         justifyContent: 'center',
         alignItems: 'center',
         height: '100vh', // Full viewport height
-        background: '#000',
+        background: '#000', // Background color for the entire page
+        border: '40px solid #000', // Border color for the entire page
+        backgroundImage: 'url("./grungy-white-background-natural-cement-stone-old-texture-as-retro-pattern-wall-conceptual-wall-banner-grunge-material-construction.jpg")', // Specify the path to your background image
+        backgroundSize: '1200px', // Adjust the background image size (cover, contain, or custom size)
+        backgroundPosition: 'center', // Center the background image
     };
+    
 
     const rectangleStyle = {
         display: 'flex',
-        width: '1400px',
-        height: '700px',
+        width: '1200px',
+        height: '500px',
         background: '#000',
         color: '#fff',
         borderRadius: '30px 0 30px 0', // Top right and bottom left corners are rounded
@@ -43,7 +48,10 @@ const About = () => {
         padding: '50 10 10 10'
     };
     return (
+        <div>
+
         <div style={pageStyle}>
+
             <div style={rectangleStyle}>
                 <div style={leftSectionStyle}>
                     {/* Content for the left section */}
@@ -55,6 +63,7 @@ const About = () => {
 
                 </div>
             </div>
+        </div>
         </div>
     );
 };
