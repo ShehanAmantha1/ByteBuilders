@@ -4,22 +4,23 @@ import "./StyleSheet.css";
 import About from './About.js';
 
 const nameStyle = {
-  fontFamily: 'Arial, sans-serif', // Change the font family as needed
+  fontFamily: 'Georgia, serif', // Change the font family as needed
   fontSize: '24px', // Change the font size as needed
   fontWeight: 'bold', // Add other font styles as needed
 };
 
 const titleStyle = {
   fontFamily: 'Georgia, serif', // Change the font family as needed
-  fontSize: '46px', // Change the font size as needed
+  fontSize: '76px', // Change the font size as needed
   fontStyle: 'italic', // Add other font styles as needed
+  marginTop: '5px'
 };
 
 const currentWorkStyle = {
-  fontFamily: 'Verdana, sans-serif', // Change the font family as needed
+  fontFamily: 'Georgia, serif', // Change the font family as needed
   fontSize: '18px', // Change the font size as needed
   color: '#555', // Change the text color as needed
-  // Add other font styles as needed
+  marginTop: '10px'
 };
 
 function HomePage() {

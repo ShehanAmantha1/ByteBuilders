@@ -9,7 +9,8 @@ const NavBar = () => {
         //marginBottom: '20px',
         display: 'flex',
         justifyContent: 'flex-end', // Align items to the right
-        width: '96%', // Make the navigation bar fit the page
+        width: '96.2%', // Make the navigation bar fit the page
+        
       };
 
   const linkStyle = {
@@ -20,6 +21,7 @@ const NavBar = () => {
 
   return (
     <nav style={navStyle}>
+      <img src="icons8-ranking-30.png" alt="Logo" style={{ marginRight: 'auto' }} />
       <ul style={{ listStyle: 'none', margin: 0, padding: 0 }}>
         <li style={{ display: 'inline' }}>
           <Link to="/home" style={linkStyle}>Home</Link>
