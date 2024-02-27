@@ -20,7 +20,7 @@ const Contact = () => {
         height: '500px',
         background: '#000',
         color: '#fff',
-        borderRadius: '30px 30px 30px 30px', // Top right and bottom left corners are rounded
+        borderRadius: '34px 34px 34px 34px', // Top left and bottom left corners are rounded
         margin: 'auto', // Center the rectangle horizontally
     };
     
@@ -48,7 +48,7 @@ const Contact = () => {
     };
     const textUnderCircleStyle1 = {
         textAlign: 'center', // Center the text horizontally
-        marginTop: '50px', // Adjust the top margin to position the text under the circle
+        marginTop: '30px', // Adjust the top margin to position the text under the circle
         color: '#000',
     };
 
@@ -78,13 +78,13 @@ const Contact = () => {
                     <div style={profileCircleStyle}></div>
                 
                     {/* Content for the left section */}
-                    <h2 style={textUnderCircleStyle}>Contact Us</h2>
-                    <p style={textUnderCircleStyle1}>If you have any questions or inquiries, please feel free to contact us using the form below:</p>
+                    <h2 style={textUnderCircleStyle}>Contacts</h2>
+                    <p style={textUnderCircleStyle1}>"Communication is at the heart of every successful relationship, and we're here to listen.<br/> Whether you have questions, feedback, or just want to say hello, I'am always ready to connect.<br/> Reach out to us today and let's start a conversation that can lead to great things."</p>
                   
                     <div style={contactInfoStyle}>
                         <p>Contact Information:</p>
                         <p>Email: example@example.com</p>
-                        <p>Phone: 123-456-7890</p>
+                        <p>Phone: +94 71 347 9447</p>
                     </div>
                     <div style={socialMediaLinksStyle}>
                     <div className="social-media-icon" data-name="Thulshika Nawod">

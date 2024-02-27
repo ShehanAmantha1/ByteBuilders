@@ -19,9 +19,17 @@ const LoadingPage = () => {
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
             <div>
                 <img
-                    src="./Guest-with-camera-gear-on-safari-in-Botswana-Pangolin-Photo-Safaris-1536x1024.webp" // Replace with the actual path to your spinner image
+                    src="./Images/60e72028b41866ae64c5bd4711f81474.gif" // Replace with the actual path to your spinner image
                     alt="Loading Spinner"
-                    style={{ width: '1500px', height: '670px', marginRight: '10px' }}
+                    style={{
+                      width: '100vw',
+                      height: '100vh',
+                      marginRight: '10px',
+                      position: 'fixed', // Add this line to fix the position of the spinner
+                      top: 0, // Add this line to position the spinner at the top of the viewport
+                      left: 0, // Add this line to position the spinner at the left of the viewport
+                      zIndex: 9999, // Add this line to set a high z-index value for the spinner
+                    }}
                 />
             </div>
         </div>
