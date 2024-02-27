@@ -21,7 +21,7 @@ const Contact = () => {
         background: '#000',
         color: '#fff',
         borderRadius: '34px 34px 34px 34px', // Top left and bottom left corners are rounded
-        margin: 'auto', // Center the rectangle horizontally
+        marginTop: '-250px', // Center the rectangle horizontally
     };
     
 

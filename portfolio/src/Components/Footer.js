@@ -18,7 +18,7 @@ const footerStyle = {
   color: '#fff',
   textAlign: 'center',
   padding: '10px',
-  position: 'fixed',
+ // position: 'fixed',
   bottom: '0',
   width: '100%',
   height:'45px',
