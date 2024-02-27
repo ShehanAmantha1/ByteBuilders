@@ -1,6 +1,9 @@
 import React from 'react';
+import {Routes, Route, useNavigate} from 'react-router-dom';
 
 const About = () => {
+    const navigate = useNavigate();
+
     const pageStyle = {
         display: 'flex',
         justifyContent: 'center',
@@ -63,6 +66,8 @@ const About = () => {
 
     const handleReadMore = () => {
         // Handle the "Read More" button click event
+        navigate('/about');
+
     };
 
     return (
@@ -71,6 +76,14 @@ const About = () => {
                 <div style={rectangleStyle}>
                     <div style={leftSectionStyle}>
                         {/* Content for the left section */}
+                        <h1 style={{ fontFamily: 'Arial' }}>Hey I'm Thulshika</h1>
+                        <br></br>
+    <p style={{ fontFamily: 'Arial' }}>
+        Greetings from the lens of Thulshika Nawod! I'm a local small business photographer with an insatiable love for nature and a knack for capturing those fleeting, magical moments that make life truly extraordinary. My lens is my paintbrush, and the world around me is my canvas.
+    </p>
+    <p style={{ fontFamily: 'Arial' }}>
+        Whether it's the gentle sway of a blade of grass, the ethereal glow of a sunrise, or the quiet intimacy of a shared glance, I believe every moment is worth preserving. Through my photography, I aim to not just capture images, but to evoke emotions, tell stories, and create memories that will last a lifetime. So, if you're looking for a photographer who's as passionate about nature and photographic moments as you are, look no further. I'm here to bring your vision to life, one click at a time.
+    </p>
                         <button style={readMoreButtonStyle} onClick={handleReadMore}>Read More</button>
 
                     </div>
